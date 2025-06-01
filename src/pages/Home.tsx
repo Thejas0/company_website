@@ -1,7 +1,6 @@
 import React, { useRef, useState } from 'react';
-import { Box, Container, Typography, Grid, Button, Card, CardContent, CardMedia, Avatar, Rating, TextField, Snackbar, Alert } from '@mui/material';
+import { Box, Container, Typography, Grid, Button, Card, CardContent, CardMedia, TextField, Snackbar, Alert } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import emailjs from "@emailjs/browser";
 import manifoldImage from '../assets/manifold_cover_img.jpg';
@@ -168,7 +167,6 @@ const companies = [
 ];
 
 const Home = () => {
-  const navigate = useNavigate();
   const form = useRef<HTMLFormElement>(null);
   const [openSnackbar, setOpenSnackbar] = useState(false);
   const [snackbarMessage, setSnackbarMessage] = useState('');
